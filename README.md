@@ -17,4 +17,7 @@ Built a new user-level file system to understand how file systems work in Linux.
    3. read
    4. readdir
    
-
+# getattr
+   1. if the value of path equals to root /, we declare it as a directory and return.
+   2. if the value of path equals to filepath /file, we declare it as a file and explicit its size and then return.
+   3. Otherwise nothing exists at the given path, and we return -ENOENT.
